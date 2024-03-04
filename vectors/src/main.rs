@@ -1,3 +1,13 @@
+fn print_vector(v: Vec<i32>)
+{
+    // print entries in vector
+    for i in &v
+    {
+        print!("{i} ");
+    }
+    println!("");
+}
+
 fn main()
 {
     let mut v:Vec<i32> = Vec::new();
@@ -13,13 +23,7 @@ fn main()
     u.push(5);
     u.push(6);
 
-    // print entries in vector
-    for i in &v
-    {
-        print!("{i} ");
-    }
-
-    println!("");
+    print_vector(v);
 
     // update entries in vector
     for i in &mut u
