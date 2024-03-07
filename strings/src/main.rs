@@ -34,4 +34,10 @@ fn main()
     let d = format!("{a} {b} {c}");
     println!("{d}");
 
+    for c in d.chars()
+    {
+        println!("{c}");
+    }
+
+
 }
