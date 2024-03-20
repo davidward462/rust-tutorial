@@ -3,7 +3,7 @@ use std::collections::HashMap;
 fn main() {
 
     // text to parse
-    let text = "An apple pie, a bright blue sky";
+    let text = "three three three one two two six six six six six six";
 
     // create hash map
     let mut map = HashMap::new();
