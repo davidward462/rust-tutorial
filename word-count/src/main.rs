@@ -8,6 +8,8 @@ fn main() {
     // create hash map
     let mut map = HashMap::new();
 
+    let mut total_words = 0;
+
     // split string on whitespace and iterate over the words
     for word in text.split_whitespace()
     {
@@ -16,9 +18,12 @@ fn main() {
         // note that or_insert() returns a type of <&mut V>
         
         // dereference mutable reference (thus making it just a normal mut) to count and update it's value if it exists 
+        // increment local and global counters
+        total_words += 1;
         *count += 1;
     }
 
+    println!("total words: {total_words}");
     println!("{:?}", map);
 
 }
