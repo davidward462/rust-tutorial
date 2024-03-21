@@ -39,6 +39,10 @@ fn main() {
     println!("before: {:?}", seq);
     println!("max: {max}");
 
+    seq.sort();
+    
+    println!("after: {:?}", seq);
+
 }
 
 
