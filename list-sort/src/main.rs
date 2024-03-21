@@ -18,7 +18,6 @@ fn max(vec: &Vec<i32>) -> i32
     max
 }
 
-
 fn main() {
 
     println!("-- Sort --");
@@ -39,6 +38,13 @@ fn main() {
     
     println!("before: {:?}", seq);
     println!("max: {max}");
-    
 
 }
+
+
+
+
+
+
+
+
